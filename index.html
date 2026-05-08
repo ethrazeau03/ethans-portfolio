@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ethan Brazeau — Software Developer and Business Intelligence professional based in Ontario, Canada." />
+  <title>Ethan Brazeau | Software Developer &amp; BI Professional</title>
+
+  <!-- Google Fonts: Playfair Display + Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="#hero" class="nav-logo">EB</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- REPLACE: Update href with your actual resume PDF file path -->
+      <a href="Ethan's Resume.pdf" class="btn btn-outline nav-resume" target="_blank" rel="noopener">Resume</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">Hi, I'm</p>
+        <h1 class="hero-name">Ethan Brazeau</h1>
+        <p class="hero-title">Software Developer &amp; Business Intelligence Professional</p>
+        <p class="hero-sub">
+          I build web applications, data pipelines, and BI dashboards, with a focus on writing clean code and turning data into something actually useful.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+        </div>
+        <div class="hero-links">
+          <!-- REPLACE: Update href values with your actual GitHub and LinkedIn URLs -->
+          <a href="https://github.com/ethrazeau03" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ethan-brazeau-7664b7275/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">01 / About</span>
+          <h2 class="section-title">A bit about me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a software developer based in Ontario, Canada. I completed my Software Development diploma at Algonquin College in April 2025, followed by a Business Intelligence Systems Infrastructure postgraduate certificate, which has been a strong addition to my development background.            </p>
+            <p>
+              My work spans both sides of the stack. I've built and maintained full web applications in PHP and MySQL, worked with Python for data analysis and machine learning, and built dashboards in Power BI. At Nexify Tech, I worked alongside a founder to build out features, fix real bugs, and ship changes that actually made it to production.
+            </p>
+            <p>
+              I care about writing code that other people can read, databases that are structured properly, and building things that solve a real problem rather than just checking a box.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number">8+</span>
+                <span class="stat-label">Projects Shipped</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">2</span>
+                <span class="stat-label">Credentials</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">1</span>
+                <span class="stat-label">Real Client Site</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-aside">
+            <div class="about-card">
+              <h3>Currently</h3>
+              <ul>
+                <li>Software Developer with BI and data-focused training</li>
+                <li>Building data-driven web applications and dashboards</li>
+                <li>Open to full-time opportunities in software development/web development, BI, and data-focused roles</li>
+              </ul>
+            </div>
+            <div class="about-card">
+              <h3>Based In</h3>
+              <p>Ontario, Canada</p>
+            </div>
+            <div class="about-card">
+              <h3>Interests</h3>
+              <ul>
+                <li>Data analysis &amp; visualization</li>
+                <li>Machine learning</li>
+                <li>Full-stack web development</li>
+                <li>Data Modeling</li>
+                <li>UI/UX Design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS
+    ============================================================ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">02 / Skills</span>
+          <h2 class="section-title">What I work with</h2>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Languages</h3>
+            <ul class="skill-list">
+              <li>Python</li>
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+              <li>C#</li>
+              <li>HTML &amp; CSS</li>
+              <li>SQL</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Data &amp; BI</h3>
+            <ul class="skill-list">
+              <li>Power BI</li>
+              <li>Tableau</li>
+              <li>Pandas</li>
+              <li>Scikit-learn</li>
+              <li>NumPy</li>
+              <li>Streamlit</li>
+              <li>Dimensional Modeling</li>
+              <li>Microsoft Excel</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Web &amp; Backend</h3>
+            <ul class="skill-list">
+              <li>MySQL</li>
+              <li>PHP / MySQL Applications</li>
+              <li>REST APIs</li>
+              <li>bcrypt &amp; Prepared Statements</li>
+              <li>Google Analytics</li>
+              <li>Schema Markup / SEO</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Tools &amp; Workflow</h3>
+            <ul class="skill-list">
+              <li>Git &amp; GitHub</li>
+              <li>VS Code</li>
+              <li>Normalized Database Design</li>
+              <li>EDA &amp; Data Cleaning</li>
+              <li>Machine Learning Concepts</li>
+              <li>Web Security Concepts</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EDUCATION
+    ============================================================ -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">03 / Education</span>
+          <h2 class="section-title">Where I studied</h2>
+        </div>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2025 – 2026</span>
+                <span class="timeline-badge">Completed</span>
+              </div>
+              <h3 class="timeline-title">Business Intelligence Systems Infrastructure</h3>
+              <p class="timeline-org">Algonquin College — Graduate Certificate</p>
+              <p class="timeline-desc">
+                Graduate-level program focused on BI tools, data modeling, machine learning, and infrastructure. Covers Power BI, dimensional modeling, SQL-based reporting, and analytical workflows. Hands-on with real datasets throughout.
+              </p>
+              <ul class="timeline-tags">
+                <li>Power BI</li>
+                <li>Machine Learning</li>
+                <li>Dimensional Modeling</li>
+                <li>SQL</li>
+                <li>Data Analysis</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2023 – 2025</span>
+                <span class="timeline-badge timeline-badge--done">Completed</span>
+              </div>
+              <h3 class="timeline-title">Computer Science / Web Development</h3>
+              <p class="timeline-org">Algonquin College — Diploma, April 2025</p>
+              <p class="timeline-desc">
+                Two-year program covering the full software development lifecycle — from front-end and back-end web development to database design, security, and deployment. Built real projects across PHP, JavaScript, SQL, and C# throughout the program.
+              </p>
+              <ul class="timeline-tags">
+                <li>PHP &amp; MySQL</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>Database Design</li>
+                <li>Web Security</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WORK EXPERIENCE
+    ============================================================ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">04 / Experience</span>
+          <h2 class="section-title">Where I've worked</h2>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-role">Junior Software Developer</h3>
+              <p class="experience-company">Nexify Tech</p>
+            </div>
+            <span class="experience-date">2025</span>
+          </div>
+          <p class="experience-desc">
+            Worked with the founder to build and maintain a custom internal web application. My day-to-day involved writing PHP, wiring up backend routes to front-end forms and dashboards, updating and modifying database tables, and fixing bugs across the codebase. I also helped support a secure login system and made ongoing changes based on direct feedback.
+          </p>
+          <ul class="experience-highlights">
+            <li>Built and updated database-driven pages using PHP and MySQL</li>
+            <li>Connected backend logic to front-end forms and dashboard components</li>
+            <li>Supported secure user authentication using prepared statements and bcrypt</li>
+            <li>Fixed bugs and improved existing code across the application</li>
+            <li>Collaborated closely with the founder on feature changes and feedback</li>
+          </ul>
+          <ul class="timeline-tags">
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>JavaScript</li>
+            <li>HTML &amp; CSS</li>
+            <li>bcrypt</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS
+    ============================================================ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">05 / Projects</span>
+          <h2 class="section-title">Things I've built</h2>
+        </div>
+
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="data">Data &amp; BI</button>
+          <button class="filter-btn" data-filter="web">Web Dev</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: ML Credit Card -->
+          <article class="project-card" data-category="data">
+            <div class="project-card-header">
+              <div class="project-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              </div>
+              <span class="project-category-tag">Machine Learning</span>
+            </div>
+            <h3 class="project-title">Credit Card Approval Prediction</h3>
+            <p class="project-desc">
+              Built a machine learning pipeline that predicts credit card approval outcomes based on applicant data. Covers the full workflow — data cleaning, exploratory analysis, model training, and a working Streamlit app for predictions.
+            </p>
+            <ul class="project-tech">
+              <li>Python</li>
+              <li>pandas</li>
+              <li>scikit-learn</li>
+              <li>Streamlit</li>
+            </ul>
+            <div class="project-links">
+              <!-- REPLACE: Add your actual GitHub repo link below -->
+              <a href="https://github.com/yourusername/credit-card-approval" target="_blank" rel="noopener" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Gym Management Power BI -->
+          <article class="project-card" data-category="data">
+            <div class="project-card-header">
+              <div class="project-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <span class="project-category-tag">Business Intelligence</span>
+            </div>
+            <h3 class="project-title">Gym Management Data Model &amp; Dashboard</h3>
+            <p class="project-desc">
+              Designed a dimensional data model for a gym management system, including member registration and attendance tracking. Built Power BI dashboards on top of the model using fact tables, dimension tables, and conformed dimensions.
+            </p>
+            <ul class="project-tech">
+              <li>Power BI</li>
+              <li>SQL</li>
+              <li>Dimensional Modeling</li>
+              <li>DAX</li>
+            </ul>
+            <div class="project-links">
+              <!-- REPLACE: Add your actual GitHub repo link below -->
+              <a href="https://github.com/yourusername/gym-management-bi" target="_blank" rel="noopener" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Secure Social Media -->
+          <article class="project-card" data-category="web">
+            <div class="project-card-header">
+              <div class="project-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <span class="project-category-tag">Web Security</span>
+            </div>
+            <h3 class="project-title">Secure Social Media / Blog System</h3>
+            <p class="project-desc">
+              Group security-focused project — a PHP and MySQL blog/social platform built with web security as the priority. Implemented bcrypt password hashing, prepared statements throughout, input validation, SQL injection prevention, and XSS protection.
+            </p>
+            <ul class="project-tech">
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>bcrypt</li>
+              <li>Prepared Statements</li>
+              <li>XSS Prevention</li>
+            </ul>
+            <div class="project-links">
+              <!-- REPLACE: Add your actual GitHub repo link below -->
+              <a href="https://github.com/yourusername/secure-blog-system" target="_blank" rel="noopener" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: CMG Massage Therapy -->
+          <article class="project-card project-card--featured" data-category="web">
+            <div class="project-card-header">
+              <div class="project-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <span class="project-category-tag project-category-tag--accent">Live Client Site</span>
+            </div>
+            <h3 class="project-title">CMG Massage Therapy Website</h3>
+            <p class="project-desc">
+              Built and maintained a real website for a massage therapy client. Handled everything from the initial build to cPanel hosting, Google Analytics setup, local SEO, and structured data/schema markup to improve search visibility.
+            </p>
+            <ul class="project-tech">
+              <li>PHP</li>
+              <li>HTML &amp; CSS</li>
+              <li>cPanel</li>
+              <li>Google Analytics</li>
+              <li>Schema Markup</li>
+              <li>Local SEO</li>
+            </ul>
+            <div class="project-links">
+              <!-- REPLACE: Add the actual live site URL below if you're able to share it, otherwise remove this link -->
+              <a href="https://cmgmassagetherapy.com/" target="_blank" rel="noopener" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Site
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">06 / Contact</span>
+          <h2 class="section-title">Let's talk</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-text">
+            <p>
+              I'm currently looking for full-time opportunities in software development or business intelligence. If you have a role that fits, or just want to connect, feel free to reach out.
+            </p>
+            <p>
+              I try to respond within a day or two.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <!-- REPLACE: Update the mailto address with your actual email -->
+            <a href="ethanbrazeau602@gmail.com" class="btn btn-primary contact-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Send Me an Email
+            </a>
+            <!-- REPLACE: Update href with your actual LinkedIn URL -->
+            <a href="https://www.linkedin.com/in/ethan-brazeau-7664b7275/" target="_blank" rel="noopener" class="btn btn-outline contact-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 23.2 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <!-- REPLACE: Update href with your actual GitHub URL -->
+            <a href="https://github.com/ethrazeau03" target="_blank" rel="noopener" class="btn btn-outline contact-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-name">Ethan Brazeau</p>
+      <div class="footer-links">
+        <!-- REPLACE: Update these href values with your actual URLs -->
+        <a href="https://github.com/ethrazeau03" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/ethan-brazeau-7664b7275/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="ethanbrazeau602@gmail.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
