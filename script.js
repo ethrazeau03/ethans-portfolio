@@ -227,4 +227,69 @@
     });
   }
 
+  /* ----------------------------------------------------------
+     CONTACT FORM — Formspree AJAX submission
+  ---------------------------------------------------------- */
+  var contactForm   = qs('#contact-form');
+  var formSubmit    = qs('#form-submit');
+  var formStatus    = qs('#form-status');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      formSubmit.disabled    = true;
+      formSubmit.textContent = 'Sending…';
+      formStatus.textContent = '';
+      formStatus.className   = 'form-status';
+
+      fetch(contactForm.action, {
+        method:  'POST',
+        headers: { 'Accept': 'application/json' },
+        body:    new FormData(contactForm)
+      })
+      .then(function (res) {
+        if (res.ok) {
+          formStatus.textContent = 'Message sent — I\'ll be in touch soon.';
+          formStatus.classList.add('success');
+          contactForm.reset();
+        } else {
+          return res.json().then(function (data) {
+            throw new Error(data.errors ? data.errors.map(function(e){return e.message;}).join(', ') : 'Something went wrong.');
+          });
+        }
+      })
+      .catch(function (err) {
+        formStatus.textContent = 'Could not send — try emailing me directly on LinkedIn.';
+        formStatus.classList.add('error');
+        console.error(err);
+      })
+      .finally(function () {
+        formSubmit.disabled    = false;
+        formSubmit.textContent = 'Send Message';
+      });
+    });
+  }
+
+  
+  /* ----------------------------------------------------------
+     FOOTER CONTACT LINK — arrow pointer easter egg
+  ---------------------------------------------------------- */
+  var footerContactLink = document.querySelector('.footer-links a[href="#contact"]');
+  var sectionPointer    = qs('#section-pointer');
+
+  if (footerContactLink && sectionPointer) {
+    footerContactLink.addEventListener('click', function () {
+      // Small delay so the scroll lands first, then the arrow appears
+      setTimeout(function () {
+        sectionPointer.classList.add('visible');
+
+        // Hide it after the bounce animation finishes
+        setTimeout(function () {
+          sectionPointer.classList.remove('visible');
+        }, 2400);
+      }, 500);
+    });
+  }
+
 })();
