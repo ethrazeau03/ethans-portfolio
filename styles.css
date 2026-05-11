@@ -1266,7 +1266,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .section-pointer.visible {
   opacity: 1;
   transform: translateX(0);
-  animation: pointerBounce 0.8s var(--ease) 0.3s 3 alternate;
+  animation: pointerBounce 1s var(--ease) 0.2s 3 alternate;
 }
 
 @keyframes pointerBounce {
