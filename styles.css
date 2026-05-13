@@ -990,7 +990,9 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .reveal-stagger.visible > *:nth-child(2) { opacity: 1; transform: none; transition-delay: 0.12s; }
 .reveal-stagger.visible > *:nth-child(3) { opacity: 1; transform: none; transition-delay: 0.19s; }
 .reveal-stagger.visible > *:nth-child(4) { opacity: 1; transform: none; transition-delay: 0.26s; }
-
+.reveal-stagger.visible > *:nth-child(5) { opacity: 1; transform: none; transition-delay: 0.33s; }
+.reveal-stagger.visible > *:nth-child(6) { opacity: 1; transform: none; transition-delay: 0.40s; }
+.reveal-stagger.visible > *:nth-child(n+7) { opacity: 1; transform: none; transition-delay: 0.47s; }
 /* ============================================================
    RESPONSIVE — TABLET (max 900px)
 ============================================================ */
